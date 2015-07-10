@@ -636,7 +636,7 @@ imap <silent><buffer> ,,f :e .<cr>
 
 " Insert a fence for segmented lists.
 " this divider is used by otl2html.py to create '<hr>'
-map <silent><buffer> <localleader>- o----------------------------------------0
+map <silent><buffer> ,,- o----------------------------------------0
 imap <silent><buffer> ,,- ----------------------------------------<cr>
 
 "   First, convert document to the marker style
@@ -659,7 +659,7 @@ map <silent><buffer>   <localleader>2           :set foldlevel=1<CR>
 map <silent><buffer>   <localleader>1           :set foldlevel=0<CR>
 "next line commented out due to hard-coded nature and ancient, nonexistent file
 "map <silent><buffer>   <localleader>,,          :runtime vimoutliner/vimoutlinerrc<CR>
-map! <silent><buffer>  <localleader>w           <Esc>:w<CR>a
+map! <silent><buffer>  ,,w           <Esc>:w<CR>a
 nmap <silent><buffer>  <localleader>e           :call Spawn()<cr>
 " Steve's additional mappings end here
 
