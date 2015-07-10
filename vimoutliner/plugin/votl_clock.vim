@@ -130,9 +130,9 @@ endf
 "}}}1
 " Mappings {{{1
 nmap <silent> <buffer> <localleader>cs $:call ClockStart(1)<cr>
-imap <silent> <buffer> <localleader>cs ~<esc>x:call ClockStart(0)<cr>a
+imap <silent> <buffer> ,,cs ~<esc>x:call ClockStart(0)<cr>a
 nmap <silent> <buffer> <localleader>cS $:call ClockStop()<cr>:call UpdateTimes()<cr>
-imap <silent> <buffer> <localleader>cS ~<esc>x:call ClockStop()<cr>:call UpdateTimes()<cr>i
+imap <silent> <buffer> ,,cS ~<esc>x:call ClockStop()<cr>:call UpdateTimes()<cr>i
 nmap <silent> <buffer> <localleader>cu $:call UpdateTimes()<cr>
 "}}}1
 " The End

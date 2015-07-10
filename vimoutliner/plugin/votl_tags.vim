@@ -44,7 +44,7 @@ endif
 " Create a link from a word in insert mode.
 inoremap <buffer> <Plug>VO_CreateLinkI <C-O>:call <SID>create_link()<CR>
 if !hasmapto('<Plug>VO_CreateLinkI')
-	silent! imap <silent> <unique> <buffer> <localleader>l <Plug>VO_CreateLinkI
+	silent! imap <silent> <unique> <buffer> ,,l <Plug>VO_CreateLinkI
 endif
 
 " Functions {{{1

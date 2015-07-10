@@ -617,12 +617,12 @@ endif
 " Vim Outliner Key Mappings {{{1
 " insert the date
 nmap <silent><buffer> <localleader>d $:call InsertSpaceDate()<cr>
-imap <silent><buffer> <localleader>d ~<esc>x:call InsertDate(0)<cr>a
+imap <silent><buffer> ,,d ~<esc>x:call InsertDate(0)<cr>a
 nmap <silent><buffer> <localleader>D ^:call InsertDate(1)<cr>a <esc>
 
 " insert the time
 nmap <silent><buffer> <localleader>t $:call InsertSpaceTime()<cr>
-imap <silent><buffer> <localleader>t ~<esc>x:call InsertTime(0)<cr>a
+imap <silent><buffer> ,,t ~<esc>x:call InsertTime(0)<cr>a
 nmap <silent><buffer> <localleader>T ^:call InsertTime(1)<cr>a <esc>
 
 " sort a list naturally
@@ -632,12 +632,12 @@ map <silent> <buffer> <localleader>S :silent call SortChildren(1)<cr>
 
 " invoke the file explorer
 map <silent><buffer> <localleader>f :e .<cr>
-imap <silent><buffer> <localleader>f :e .<cr>
+imap <silent><buffer> ,,f :e .<cr>
 
 " Insert a fence for segmented lists.
 " this divider is used by otl2html.py to create '<hr>'
 map <silent><buffer> <localleader>- o----------------------------------------0
-imap <silent><buffer> <localleader>- ----------------------------------------<cr>
+imap <silent><buffer> ,,- ----------------------------------------<cr>
 
 "   First, convert document to the marker style
 map <silent><buffer><localleader>b :%s/\(^\t*\):/\1/e<cr>:%s/\(^\t*\) /\1: /e<cr>:let @/=""<cr>
